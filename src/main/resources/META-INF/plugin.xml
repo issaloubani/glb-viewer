@@ -11,7 +11,9 @@
     <version>1.0.0</version>
     <depends>com.intellij.modules.platform</depends>
 
-
+    <applicationListeners>
+        <listener class="com.github.issaloubani.glbviewer.GLBListener" topic="com.intellij.ide.AppLifecycleListener"/>
+    </applicationListeners>
 
     <extensions defaultExtensionNs="com.intellij">
         <fileType
