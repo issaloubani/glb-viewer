@@ -3,20 +3,14 @@
     <id>com.github.issaloubani.glbviewer</id>
     <name>GLB Viewer</name>
     <vendor>issaloubani</vendor>
-
+    <description>The GLB Viewer Plugin for IntelliJ enables seamless GLB file viewing and animation support directly
+        within your IntelliJ IDE. With this plugin, you can effortlessly explore, interact with, and analyze 3D models.
+        It provides cross-platform compatibility and efficient communication through Flutter Web and Spring Boot,
+        enhancing your development workflow and empowering you to streamline your 3D development process.
+    </description>
+    <version>1.0.0</version>
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
-    <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.issaloubani.glbviewer.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-    </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.issaloubani.glbviewer.listeners.MyApplicationActivationListener"
-                  topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-        <listener class="com.github.issaloubani.glbviewer.GLBListener" topic="com.intellij.ide.AppLifecycleListener"/>
-    </applicationListeners>
 
 
     <extensions defaultExtensionNs="com.intellij">
