@@ -1,7 +1,7 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.issaloubani.glbviewer</id>
-    <name>glb-viewer Template</name>
+    <name>GLB Viewer</name>
     <vendor>issaloubani</vendor>
 
     <depends>com.intellij.modules.platform</depends>
@@ -13,6 +13,20 @@
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.issaloubani.glbviewer.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+        <listener class="com.github.issaloubani.glbviewer.listeners.MyApplicationActivationListener"
+                  topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+        <listener class="com.github.issaloubani.glbviewer.GLBListener" topic="com.intellij.ide.AppLifecycleListener"/>
     </applicationListeners>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType
+                name="GLB"
+                implementationClass="com.github.issaloubani.glbviewer.GLBFileType"
+                fieldName="INSTANCE"
+                language="GLB"
+                extensions="glb"/>
+        <fileEditorProvider implementation="com.github.issaloubani.glbviewer.GLBEditorProvider"
+        />
+    </extensions>
 </idea-plugin>
