@@ -8,7 +8,7 @@
         It provides cross-platform compatibility and efficient communication through Flutter Web and Spring Boot,
         enhancing your development workflow and empowering you to streamline your 3D development process.
     </description>
-    <version>1.0.0</version>
+    <version>0.0.2</version>
     <depends>com.intellij.modules.platform</depends>
 
     <applicationListeners>
