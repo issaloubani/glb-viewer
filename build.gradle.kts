@@ -26,9 +26,6 @@ repositories {
 dependencies {
     //compileOnly("org.apache.tomcat:tomcat-catalina:9.0.30")
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
-    implementation("org.apache.tomcat.embed:tomcat-embed-core:9.0.52")
-    implementation("org.apache.tomcat.embed:tomcat-embed-jasper:9.0.52")
-    compileOnly("javax.servlet:javax.servlet-api:4.0.1")
 }
 
 // Set the JVM language level used to build the project. Use Java 11 for 2020.3+, and Java 17 for 2022.2+.
@@ -44,6 +41,7 @@ intellij {
 
     // Plugin Dependencies. Uses `platformPlugins` property from the gradle.properties file.
     plugins = properties("platformPlugins").map { it.split(',').map(String::trim).filter(String::isNotEmpty) }
+
 }
 
 // Configure Gradle Changelog Plugin - read more: https://github.com/JetBrains/gradle-changelog-plugin
@@ -67,6 +65,10 @@ koverReport {
             onCheck = true
         }
     }
+}
+
+configurations.all {
+    resolutionStrategy.sortArtifacts(ResolutionStrategy.SortOrder.DEPENDENCY_FIRST)
 }
 
 tasks {
