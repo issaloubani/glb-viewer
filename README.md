@@ -17,11 +17,12 @@
 - [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
 
 <!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
-
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
-
-To keep everything working, do not remove `<!-- ... -->` sections. 
+<![CDATA[
+<p>The GLB Viewer Plugin for IntelliJ enables seamless GLB file viewing and animation support directly
+within your IntelliJ IDE. With this plugin, you can effortlessly explore, interact with, and analyze 3D models.
+It provides cross-platform compatibility and efficient communication through Flutter Web and Spring Boot,
+enhancing your development workflow and empowering you to streamline your 3D development process.</p>
+]]>
 <!-- Plugin description end -->
 
 ## Installation
