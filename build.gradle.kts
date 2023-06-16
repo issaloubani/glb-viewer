@@ -76,11 +76,13 @@ tasks {
         gradleVersion = properties("gradleVersion").get()
     }
 
-    /*patchPluginXml {
+    patchPluginXml {
         version = properties("pluginVersion")
         sinceBuild = properties("pluginSinceBuild")
         untilBuild = properties("pluginUntilBuild")
 
+        /*
+        * Uncomment to enable loading change notes & description from the Readme.md file
         // Extract the <!-- Plugin description --> section from README.md and provide for the plugin's manifest
         pluginDescription = providers.fileContents(layout.projectDirectory.file("README.md")).asText.map {
             val start = "<!-- Plugin description -->"
@@ -94,17 +96,17 @@ tasks {
             }
         }
 
-//        val changelog = project.changelog // local variable for configuration cache compatibility
-//        // Get the latest available change notes from the changelog file
-//        changeNotes = properties("pluginVersion").map { pluginVersion ->
-//            with(changelog) {
-//                renderItem(
-//                    (getOrNull(pluginVersion) ?: getUnreleased()).withHeader(false).withEmptySections(false),
-//                    Changelog.OutputType.HTML,
-//                )
-//            }
-//        }
-    }*/
+        val changelog = project.changelog // local variable for configuration cache compatibility
+        // Get the latest available change notes from the changelog file
+        changeNotes = properties("pluginVersion").map { pluginVersion ->
+            with(changelog) {
+                renderItem(
+                    (getOrNull(pluginVersion) ?: getUnreleased()).withHeader(false).withEmptySections(false),
+                    Changelog.OutputType.HTML,
+                )
+            }
+        }*/
+    }
 
     // Configure UI tests plugin
     // Read more: https://github.com/JetBrains/intellij-ui-test-robot
