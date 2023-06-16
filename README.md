@@ -18,10 +18,10 @@
 
 <!-- Plugin description -->
 <![CDATA[
-<p>The GLB Viewer Plugin for IntelliJ enables seamless GLB file viewing and animation support directly
+The GLB Viewer Plugin for IntelliJ enables seamless GLB file viewing and animation support directly
 within your IntelliJ IDE. With this plugin, you can effortlessly explore, interact with, and analyze 3D models.
 It provides cross-platform compatibility and efficient communication through Flutter Web and Spring Boot,
-enhancing your development workflow and empowering you to streamline your 3D development process.</p>
+enhancing your development workflow and empowering you to streamline your 3D development process.
 ]]>
 <!-- Plugin description end -->
 
