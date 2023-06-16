@@ -4,11 +4,20 @@
     <name>GLB Viewer</name>
     <vendor>issaloubani</vendor>
     <depends>com.intellij.modules.platform</depends>
-
     <applicationListeners>
         <listener class="com.github.issaloubani.glbviewer.GLBListener" topic="com.intellij.ide.AppLifecycleListener"/>
     </applicationListeners>
-    <description>The GLB Viewer Plugin for IntelliJ enables seamless GLB file viewing and animation support directly within your IntelliJ IDE. With this plugin, you can effortlessly explore, interact with, and analyze 3D models. It provides cross-platform compatibility and efficient communication through Flutter Web and Spring Boot, enhancing your development workflow and empowering you to streamline your 3D development process.</description>
+    <description>The GLB Viewer Plugin for IntelliJ enables seamless GLB file viewing and animation support directly
+        within your IntelliJ IDE. With this plugin, you can effortlessly explore, interact with, and analyze 3D models.
+        It provides cross-platform compatibility and efficient communication through Flutter Web and Spring Boot,
+        enhancing your development workflow and empowering you to streamline your 3D development process.
+    </description>
+    <change-notes><![CDATA[
+    <h2>New Features</h2>
+    <ul>
+      <li>Added support up to 5GB GLB files</li>
+    </ul>
+]]></change-notes>
     <extensions defaultExtensionNs="com.intellij">
         <fileType
                 name="GLB"
