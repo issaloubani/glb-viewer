@@ -33,27 +33,11 @@ enhancing your development workflow and empowering you to streamline your 3D dev
 [![Demo Video](images/robot.gif)](videos/plugin_demo.mp4)
 
 ## Screenshots
-<div align="center">
 <div class="slider">
   <img src="images/car.jpg" alt="Screenshot 1"/>
   <img src="images/drone.jpg" alt="Screenshot 2"/>
   <img src="images/robot.jpg" alt="Screenshot 3"/>
 </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    $('.slider').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
-      autoplay: true,
-      autoplaySpeed: 2000,
-    });
-  });
-</script>
 
 ## Usage
 
