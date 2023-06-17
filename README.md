@@ -1,45 +1,84 @@
-# glb-viewer
+# GLB Viewer Plugin
 
 ![Build](https://github.com/issaloubani/glb-viewer/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/22024-glb-viewer)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/22024-glb-viewer)
 
-## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [ ] Get familiar with the [template documentation][template].
-- [ ] Adjust the [pluginGroup](./gradle.properties), [plugin ID](./src/main/resources/META-INF/plugin.xml) and [sources package](./src/main/kotlin).
-- [ ] Adjust the plugin description in `README` (see [Tips][docs:plugin-description])
-- [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html?from=IJPluginTemplate).
-- [ ] [Publish a plugin manually](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html?from=IJPluginTemplate) for the first time.
-- [ ] Set the `PLUGIN_ID` in the above README badges.
-- [ ] Set the [Plugin Signing](https://plugins.jetbrains.com/docs/intellij/plugin-signing.html?from=IJPluginTemplate) related [secrets](https://github.com/JetBrains/intellij-platform-plugin-template#environment-variables).
-- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html?from=IJPluginTemplate).
-- [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
-
-<!-- Plugin description -->
-<![CDATA[
 The GLB Viewer Plugin for IntelliJ enables seamless GLB file viewing and animation support directly
 within your IntelliJ IDE. With this plugin, you can effortlessly explore, interact with, and analyze 3D models.
 It provides cross-platform compatibility and efficient communication through Flutter Web and Spring Boot,
 enhancing your development workflow and empowering you to streamline your 3D development process.
-]]>
-<!-- Plugin description end -->
 
 ## Installation
 
 - Using IDE built-in plugin system:
-  
+
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "glb-viewer"</kbd> >
   <kbd>Install Plugin</kbd>
-  
+
 - Manually:
 
   Download the [latest release](https://github.com/issaloubani/glb-viewer/releases/latest) and install it manually using
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
+## Features
+
+- View and analyze GLB files within IntelliJ IDE.
+- Support for 3D model animation.
+- Cross-platform compatibility.
+- Efficient communication through Flutter Web and Spring Boot.
+
+## Demo Video
+
+[![Demo Video](images/robot.gif)](videos/plugin_demo.mp4)
+
+## Screenshots
+<div align="center">
+<div class="slider">
+  <img src="images/car.jpg" alt="Screenshot 1"/>
+  <img src="images/drone.jpg" alt="Screenshot 2"/>
+  <img src="images/robot.jpg" alt="Screenshot 3"/>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    $('.slider').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+  });
+</script>
+
+## Usage
+
+Once the plugin is installed, you can use the GLB Viewer in the following way:
+
+1. Open a project in IntelliJ IDEA.
+2. Locate a GLB file in your project directory.
+3. Right-click on the GLB file.
+4. Select **Open with GLB Viewer** from the context menu.
+5. The GLB Viewer will open, allowing you to explore and interact with the 3D model.
+6. Use the provided controls to manipulate the model, view animations, and analyze the details.
+
+## Support and Feedback
+
+If you encounter any issues or have suggestions for improvement,
+please [submit an issue](https://github.com/your-repo-url/issues) on the GitHub repository.
 
 ---
+
+## License
+
+This plugin is released under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
 Plugin based on the [IntelliJ Platform Plugin Template][template].
 
 [template]: https://github.com/JetBrains/intellij-platform-plugin-template
+
 [docs:plugin-description]: https://plugins.jetbrains.com/docs/intellij/plugin-user-experience.html#plugin-description-and-presentation
