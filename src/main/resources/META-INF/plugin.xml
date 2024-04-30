@@ -15,7 +15,9 @@
     <change-notes><![CDATA[
     <h2>New Features</h2>
     <ul>
-      <li>Added support up to 5GB GLB files</li>
+      <li>Added new UI for GLB Viewer</li>
+      <li>Added support for GLB stop and playing animation</li>
+      <li>Optimized UI with html rendering instead of canvaskit</li>
     </ul>
 ]]></change-notes>
     <extensions defaultExtensionNs="com.intellij">
