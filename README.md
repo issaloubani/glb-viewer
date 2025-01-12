@@ -53,7 +53,7 @@ Once the plugin is installed, you can use the GLB Viewer in the following way:
 ## Support and Feedback
 
 If you encounter any issues or have suggestions for improvement,
-please [submit an issue](https://github.com/your-repo-url/issues) on the GitHub repository.
+please [submit an issue](https://github.com/issaloubani/glb-viewer/issues) on the GitHub repository.
 
 ---
 
